@@ -31,7 +31,7 @@ contract PatientInfo {
 	emit _PatientInfoCreated(owner);
     }
 
-    function getInfo(string memory _key) public returns(Info.patient_info memory info) {
+    function getInfo(string memory _key) public view returns(Info.patient_info memory info) {
 	return hashed_info[keccak256(abi.encodePacked(_key))];
     }
 }
