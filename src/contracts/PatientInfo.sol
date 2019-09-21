@@ -1,19 +1,11 @@
 pragma solidity ^0.5.11;
+import "./Info.sol";
 
 contract PatientInfo {
     address public owner;
 
-    struct Info {
-	bytes32 date_of_visit;
-	bytes32 doctor_name;
-	bytes32 organization;
-	bytes32 reason_of_visit;
-	bytes32 diagnosis;
-	bytes32 additional_info;
-    }
-
-    mapping (bytes32 => Info) private hashed_info;
-    event _PatientCreated(address owner);
+    mapping (bytes32 => Info.Info) private hashed_info;
+    event _PatientInfoCreated(address owner);
 
     constructor(bytes32 _key, 
 		bytes32 _date_of_visit, 
@@ -26,7 +18,7 @@ contract PatientInfo {
 	bytes32 memory key = keccak256(_key);
 	owner = msg.sender;
 
-	Info memory info;
+	Info.Info memory info;
 	info.date_of_visit = _date_of_visit;
 	info.doctor_name = _doctor_name;
 	info.organization = _organization;
@@ -35,10 +27,10 @@ contract PatientInfo {
 	info.additional_info = _additional_info;
 
 	hashed_info[key] = info;
-	emit _PatientCreated(owner);
+	emit _PatientInfoCreated(owner);
     }
 
-    function getInfo(bytes32 _key) public returns(Info) {
+    function getInfo(bytes32 _key) public returns(Info.Info memory info) {
 	return hashed_info[keccak256(_key)];
     }
 }
