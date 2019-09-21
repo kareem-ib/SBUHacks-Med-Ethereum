@@ -10,7 +10,4 @@ library Info{
         bytes32 additional_info;
     }
 
-
-
-
 }
