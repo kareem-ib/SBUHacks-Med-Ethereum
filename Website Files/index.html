@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Welcome to DOCInsight</title>
+  <title>Welcome to DocInsight</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,85 +28,265 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="file:///C:/Users/jason/Desktop/Website/login.html" target="_blank">Login</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#home">DocInsight</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#Paitent Form">Patient Forms</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#HIPPAA And EDI">HIPPAA And EDI</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#Paitent Form">Paitent Forms</a>
-            </li>
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <header class="bg-primary text-white">
-    <div class="container text-center">
-      <h1>Welcome to DOCInsight</h1>
-      <p class="lead">Where patient infomration can be stored and conveniently shared between hospitals.</p>
-    </div>
-  </header>
 
-  <section id="about">
-    <div class="container">
+  <section style=background:#003b6f id="home">
+      <div style=color:white class="container">
+          <div class="container text-center">
+              <p style="font-size: 30px">Welcome to the future</p>
+            <p style="font-size:75px " >DocInsight</p>
+            <p class="lead">Where patient information can be stored and conveniently shared between hospitals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section style=background:#1E90FF id="about">
+    <div style=color:white class="container">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
+        <div style=coloR:#EDF5E1 class="col-lg-8 mx-auto"style=width:40px>
           <h2>About our Project</h2>
-          <p class="lead">Have you ever change hospitals and wanted to transfer your health information from your old hospital. Well, this application allows doctors to share a paitents information between each other, and even allows paitents to view their health informaiton.</p>
+          <p class="lead">Have you ever wanted to change hospitals and wanted to transfer your health information. Well, this application allows doctors to share patient's information between each other, and even allows patients to view their health informaiton.</p>
           <ul>
             <li>Doctors will be able to make and edit paitent profiles </li>
-            <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-            <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-            <li>Minimal custom CSS so you are free to explore your own unique design options</li>
+            <li>Patients will be able to look at all of their past visits</li>
+            <li>It is very useful for the patient to due with the process of changing doctors</li>
+            <li>This will make the process between the patient and doctor go much smoother</li>
           </ul>
         </div>
       </div>
     </div>
+  </section>    
+  
+    <!-- Slideshow container -->
+  <section style=background:black>
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="img1.jpg" style="width:100%">
+
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="img2.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="img3.png" style="width:100%">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
   </section>
 
-  <section id="Paitent Form">
-    <div class="container">
+  <style>
+    * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+  </style>
+
+  <script>
+    var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2250); // Change image every 2 seconds
+}
+  </script>
+
+<section style=background:#1E90FF id="Paitent Form">
+    <div style=color:#D1E8E2 class="container">
       <div class="row">
-        <div clas="col-lg-8 mx-auto">
+        <div style=color:white class="col-lg-8 mx-auto"style=width:40px>
           <h2>Paitent Form</h2>
-          <p>Click here to create a paitent profile.</p>>
-          <a href="file:///C:/Users/jason/Desktop/Website/Paitent%20Form/index.html" target="_blank">Paitent Application Forms</a>
-        
-          
+          <p class="lead">We created a application form for a doctor to make for a patient, and adds them to the database.</p>
+          <p>Click here to create a patient profile.</p>>
+        <a href="file:///C:/Users/jason/Desktop/Website/Paitent%20Form/index.html" style="color:black"target="_blank"> Paitent and Doctor Application Forms</a>
+        </div>
+      </div>
+    </div>
+  </section> 
 
-          
-
-  <section id="services" class="bg-light">
+  <section style=background:#003b6f id="services" >
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Services we offer</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+        <div style=color:white class="col-lg-8 mx-auto"style=width:40px>
+          <h2 style="color: white">Services Patient Application</h2>
+          <p style="color: white" class="lead">This application will ask for questions such as full name, birthday,ethnicity and more that the are important for a docotor to have.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
+  <section style=background:#1E90FF id="HIPPAA And EDI">
+      <div class="container">
+        <div class="row">
+          <div style=color:white class="col-lg-8 mx-auto"style=width:40px>
+            <h2 style="color: white">HIPAA And EDI</h2>
+            <p style="color: white" class="lead">
+              According to the EDI, "Data can be exchanged through serial links and peer-to-peer networks...," which our
+              application follows, since we implemented our idea through blockchains. With blockchains, patient files will be encrypted with
+              secure codes, and only with access codes provided to doctors can they access patient informations. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+  <section style="background:#003b6f" id="contact">
+    <div  class="container">
+      <div style=color:white class="row">
+        <div class="mx-auto">
           <h2>Contact us</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+          <p  class="lead">If you need any assistance, or have any questions just contact us we would love to help in anyway possible.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer style="width-auto height-auto"class="width-100 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+      <p class="text-center text-white">Copyright &copy; DocInsight 2019</p>
     </div>
     <!-- /.container -->
   </footer>
