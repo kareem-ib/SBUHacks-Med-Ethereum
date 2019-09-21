@@ -1,0 +1,440 @@
+{
+  "contractName": "Info",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/othmanbichouna/Desktop/Projects/Ethereum/SBUHacks-Med-Ethereum/src/contracts/Info.sol\":\"Info\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/othmanbichouna/Desktop/Projects/Ethereum/SBUHacks-Med-Ethereum/src/contracts/Info.sol\":{\"keccak256\":\"0x553225c90bd7b9bfd63b87f9c6028f7a4b50d1d3c6037cc071996fbab172a3e9\",\"urls\":[\"bzzr://28f88eecc9a53a1c0c543f785e3b7745554b9ea6a3ec8fd01ce58a8a5332ac5e\"]}},\"version\":1}",
+  "bytecode": "0x604c6023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea165627a7a72305820ffaaf17564cb0ca76af8c559f3ec062892ecc7cc3d89d6317bddee00c7cd38310029",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea165627a7a72305820ffaaf17564cb0ca76af8c559f3ec062892ecc7cc3d89d6317bddee00c7cd38310029",
+  "sourceMap": "24:232:1:-;;132:2:-1;166:7;155:9;146:7;137:37;255:7;249:14;246:1;241:23;235:4;232:33;222:2;;269:9;222:2;293:9;290:1;283:20;323:4;314:7;306:22;347:7;338;331:24",
+  "deployedSourceMap": "24:232:1:-;;;;;;;;",
+  "source": "pragma solidity ^0.5.8;\nlibrary Info{\n\n    struct patient_info {\n        bytes32 date_of_visit;\n        bytes32 doctor_name;\n        bytes32 organization;\n        bytes32 reason_of_visit;\n        bytes32 diagnosis;\n        bytes32 additional_info;\n    }\n\n}\n",
+  "sourcePath": "/Users/othmanbichouna/Desktop/Projects/Ethereum/SBUHacks-Med-Ethereum/src/contracts/Info.sol",
+  "ast": {
+    "absolutePath": "/Users/othmanbichouna/Desktop/Projects/Ethereum/SBUHacks-Med-Ethereum/src/contracts/Info.sol",
+    "exportedSymbols": {
+      "Info": [
+        352
+      ]
+    },
+    "id": 353,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 338,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".8"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 352,
+        "linearizedBaseContracts": [
+          352
+        ],
+        "name": "Info",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Info.patient_info",
+            "id": 351,
+            "members": [
+              {
+                "constant": false,
+                "id": 340,
+                "name": "date_of_visit",
+                "nodeType": "VariableDeclaration",
+                "scope": 351,
+                "src": "73:21:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 339,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "73:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 342,
+                "name": "doctor_name",
+                "nodeType": "VariableDeclaration",
+                "scope": 351,
+                "src": "104:19:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 341,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "104:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 344,
+                "name": "organization",
+                "nodeType": "VariableDeclaration",
+                "scope": 351,
+                "src": "133:20:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 343,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "133:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 346,
+                "name": "reason_of_visit",
+                "nodeType": "VariableDeclaration",
+                "scope": 351,
+                "src": "163:23:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 345,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "163:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 348,
+                "name": "diagnosis",
+                "nodeType": "VariableDeclaration",
+                "scope": 351,
+                "src": "196:17:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 347,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "196:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 350,
+                "name": "additional_info",
+                "nodeType": "VariableDeclaration",
+                "scope": 351,
+                "src": "223:23:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 349,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "223:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "patient_info",
+            "nodeType": "StructDefinition",
+            "scope": 352,
+            "src": "43:210:1",
+            "visibility": "public"
+          }
+        ],
+        "scope": 353,
+        "src": "24:232:1"
+      }
+    ],
+    "src": "0:257:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/othmanbichouna/Desktop/Projects/Ethereum/SBUHacks-Med-Ethereum/src/contracts/Info.sol",
+    "exportedSymbols": {
+      "Info": [
+        352
+      ]
+    },
+    "id": 353,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 338,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".8"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 352,
+        "linearizedBaseContracts": [
+          352
+        ],
+        "name": "Info",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Info.patient_info",
+            "id": 351,
+            "members": [
+              {
+                "constant": false,
+                "id": 340,
+                "name": "date_of_visit",
+                "nodeType": "VariableDeclaration",
+                "scope": 351,
+                "src": "73:21:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 339,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "73:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 342,
+                "name": "doctor_name",
+                "nodeType": "VariableDeclaration",
+                "scope": 351,
+                "src": "104:19:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 341,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "104:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 344,
+                "name": "organization",
+                "nodeType": "VariableDeclaration",
+                "scope": 351,
+                "src": "133:20:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 343,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "133:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 346,
+                "name": "reason_of_visit",
+                "nodeType": "VariableDeclaration",
+                "scope": 351,
+                "src": "163:23:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 345,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "163:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 348,
+                "name": "diagnosis",
+                "nodeType": "VariableDeclaration",
+                "scope": 351,
+                "src": "196:17:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 347,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "196:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 350,
+                "name": "additional_info",
+                "nodeType": "VariableDeclaration",
+                "scope": 351,
+                "src": "223:23:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 349,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "223:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "patient_info",
+            "nodeType": "StructDefinition",
+            "scope": 352,
+            "src": "43:210:1",
+            "visibility": "public"
+          }
+        ],
+        "scope": 353,
+        "src": "24:232:1"
+      }
+    ],
+    "src": "0:257:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.8+commit.23d335f2.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.16",
+  "updatedAt": "2019-09-21T14:23:20.977Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

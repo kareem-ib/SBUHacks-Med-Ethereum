@@ -47,6 +47,13 @@ module.exports = {
      port: 8545,            // Standard Ethereum port (default: none)
      network_id: "*",       // Any network (default: none)
     },
+    rinkeby: {
+      host: "localhost", // Connect to geth on the specified
+      port: 8545,
+      from: "0xddA788c7FaFEE1F5AB752F29988a4d1961bd1b19", // default address to use for any transaction Truffle makes during migrations
+      network_id: 4,
+      gas: 4612388 // Gas limit used for deploys
+    },
 
     // Another network with more advanced options...
     // advanced: {
