@@ -1,0 +1,8 @@
+Test Deployed PatientFactory:
+0xc347483153A9FA3eca112AFF8D4fB9Cc4B74A444
+
+Deployed DoctorFactory:
+0xc71947E366a35230846Fc8019B66aD4ebcB31fbF
+
+Deployed PatientFactory:
+0xFBba19D5c2689983a1De3DB9726563bDd9cCcbA4
