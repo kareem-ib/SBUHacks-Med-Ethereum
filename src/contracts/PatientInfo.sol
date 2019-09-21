@@ -15,7 +15,7 @@ contract PatientInfo {
 	        bytes32 _diagnosis,
 	        bytes32 _additional_info) public {
 
-	bytes32 memory key = keccak256(_key);
+	bytes32 key = keccak256(_key);
 	owner = msg.sender;
 
 	Info.patient_info memory info;
