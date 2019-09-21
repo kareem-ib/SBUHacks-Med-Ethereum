@@ -17,6 +17,7 @@ contract Patient {
 
     mapping (bytes32 => PatientConstantData) public patient;
     PatientInfo[] public patient_history;
+    address[] public approved_doctors;
 
     event _PatientCreated(address owner);
     event _PatientHistoryUpdated();
@@ -63,6 +64,10 @@ contract Patient {
 						   _additional_info);
 	patient_history.push(patient_info);	
 	emit _PatientHistoryUpdated();
+    }
+
+    function addApprovedDoctor(string memory mnemonic, address doctor) public correct_key(_mnemonic) {
+	approved_doctors.push(doctor);
     }
 
     function getLastPatientInfo(string memory _mnemonic) public view correct_key(_mnemonic) returns(Info.patient_info memory info) {
