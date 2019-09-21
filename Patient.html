@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<header>Enter Access Code: </header>
+<body>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <div class="container-contact100-form-btn">
+                <button>
+                    <a style = "font-family:georgia,garamond,serif;font-size:16px;font-style:italic;" href="file:///C:/Users/jason/Desktop/Website/paitentkey.html" target="_blank">Submit</a>
+                    <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                </button>
+            </div>
+        <div class="tree">
+                <ul>
+                    <li>
+                        <a onclick="myFunction1()" href="#">Patient 1</a>
+                        <div class="popup" onclick="myFunction1()">
+                                <span class="popuptext" id="patient 1"> Patient 1: <br>
+                                    Medical History - 09/20/2017 Heart Attack
+                                </span>
+                        </div>
+                        <ul>
+                            <li>
+                                <a onclick="myFunction2()" href="#">Patient 2</a>
+                                <div class="popup" onclick="myFunction2()">
+                                        <span class="popuptext" id="patient 2">Patient 2: <br>
+                                            Medical History - 08/12/2002 Arthritis
+                                        </span>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a onclick="myFunction3()" href="#">Patient 3</a>
+                                        <div class="popup" onclick="myFunction3()">
+                                                <span class="popuptext" id="patient 3">Patient 3: <br>
+                                                    Medical History - 11/22/2009 Chronic Bronchitis
+                                                </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a onclick="myFunction4()" href="#">Patient 4</a>
+                                <div class="popup" onclick="myFunction4()">
+                                        <span class="popuptext" id="patient 4">Patient 4: <br>
+                                            Medical History - 07/14/2005 Stroke
+                                        </span>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a onclick="myFunction5()" href="#">Patient 5</a>
+                                        <div class="popup" onclick="myFunction5()">
+                                                <span class="popuptext" id="patient 5">Patient 5: <br>
+                                                    Medical History - 03/07/2018 Flu
+                                                </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a onclick="myFunction6()" href="#">Patient 6</a>
+                                        <div class="popup" onclick="myFunction6()">
+                                                <span class="popuptext" id="patient 6">Patient 6: <br>
+                                                    Medical History - 04/10/2004 Peanut Allergy
+                                                </span>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a onclick="myFunction7()" href="#">Patient 7</a>
+                                                <div class="popup" onclick="myFunction7()">
+                                                        <span class="popuptext" id="patient 7">Patient 7: <br>
+                                                            Medical History - 02/22/2002 Asthma
+                                                        </span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a onclick="myFunction8()" href="#">Patient 8</a>
+                                                <div class="popup" onclick="myFunction8()">
+                                                        <span class="popuptext" id="patient 8">Patient 8: <br>
+                                                            Medical History - 06/20/2016 Coronary Heart Disease
+                                                        </span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a onclick="myFunction9()" href="#">Patient 9</a>
+                                                <div class="popup" onclick="myFunction9()">
+                                                        <span class="popuptext" id="patient 9">Patient 9: <br>
+                                                            Medical History - 05/20/2014 Demantia
+                                                        </span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a onclick="myFunction10()" href="#">Patient 10</a>
+                                        <div class="popup" onclick="myFunction10()">
+                                                <span class="popuptext" id="patient 10">Patient 10: <br>
+                                                    Medical History - 12/10/2006 Diabetes
+                                                </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        
+</div>
+<!-- <div class="popup" onclick="myFunction()">
+        <span class="popuptext" id="myPopup">A Simple Popup!</span>
+</div> -->
+
+</body>
+
+<script>
+        // When the user clicks on div, open the popup
+        function myFunction1() {
+          var popup = document.getElementById("patient 1");
+          popup.classList.toggle("show");
+        }
+        function myFunction2(){
+            var popup = document.getElementById("patient 2");
+            popup.classList.toggle("show");
+        }
+        function myFunction3(){
+            var popup = document.getElementById("patient 3");
+            popup.classList.toggle("show");
+        }
+        function myFunction4(){
+            var popup = document.getElementById("patient 4");
+            popup.classList.toggle("show");
+        }
+        function myFunction5(){
+            var popup = document.getElementById("patient 5");
+            popup.classList.toggle("show");
+        }
+        function myFunction6(){
+            var popup = document.getElementById("patient 6");
+            popup.classList.toggle("show");
+        }
+        function myFunction7(){
+            var popup = document.getElementById("patient 7");
+            popup.classList.toggle("show");
+        }
+        function myFunction8(){
+            var popup = document.getElementById("patient 8");
+            popup.classList.toggle("show");
+        }
+        function myFunction9(){
+            var popup = document.getElementById("patient 9");
+            popup.classList.toggle("show");
+        }
+        function myFunction10(){
+            var popup = document.getElementById("patient 10");
+            popup.classList.toggle("show");
+        }
+
+        </script>
+
+<style>
+* {margin: 0; padding: 0;}
+
+.tree ul {
+	padding-top: 20px; position: relative;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+.tree li {
+	float: left; text-align: center;
+	list-style-type: none;
+	position: relative;
+	padding: 20px 5px 0 5px;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+/*We will use ::before and ::after to draw the connectors*/
+
+.tree li::before, .tree li::after{
+	content: '';
+	position: absolute; top: 0; right: 50%;
+	border-top: 1px solid #ccc;
+	width: 50%; height: 20px;
+}
+.tree li::after{
+	right: auto; left: 50%;
+	border-left: 1px solid #ccc;
+}
+
+/*We need to remove left-right connectors from elements without 
+any siblings*/
+.tree li:only-child::after, .tree li:only-child::before {
+	display: none;
+}
+
+/*Remove space from the top of single children*/
+.tree li:only-child{ padding-top: 0;}
+
+/*Remove left connector from first child and 
+right connector from last child*/
+.tree li:first-child::before, .tree li:last-child::after{
+	border: 0 none;
+}
+/*Adding back the vertical connector to the last nodes*/
+.tree li:last-child::before{
+	border-right: 1px solid #ccc;
+	border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+}
+.tree li:first-child::after{
+	border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+}
+
+/*Time to add downward connectors from parents*/
+.tree ul ul::before{
+	content: '';
+	position: absolute; top: 0; left: 50%;
+	border-left: 1px solid #ccc;
+	width: 0; height: 20px;
+}
+
+.tree li a{
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #666;
+	font-family: arial, verdana, tahoma;
+	font-size: 11px;
+	display: inline-block;
+	
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+.tree li a:hover, .tree li a:hover+ul li a {
+	background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+}
+/*Connector styles on hover*/
+.tree li a:hover+ul li::after, 
+.tree li a:hover+ul li::before, 
+.tree li a:hover+ul::before, 
+.tree li a:hover+ul ul::before{
+	border-color:  #94a0b4;
+}
+</style>
+
+<style>
+        /* Popup container - can be anything you want */
+        .popup {
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        
+        /* The actual popup */
+        .popup .popuptext {
+          visibility: hidden;
+          width: 160px;
+          background-color: #555;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 8px 0;
+          position: absolute;
+          z-index: 1;
+          bottom: 125%;
+          left: 50%;
+          margin-left: -80px;
+        }
+        
+        /* Popup arrow */
+        .popup .popuptext::after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          margin-left: -5px;
+          border-width: 5px;
+          border-style: solid;
+          border-color: #555 transparent transparent transparent;
+        }
+        
+        /* Toggle this class - hide and show the popup */
+        .popup .show {
+          visibility: visible;
+          -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+        }
+        
+        /* Add animation (fade in the popup) */
+        @-webkit-keyframes fadeIn {
+          from {opacity: 0;} 
+          to {opacity: 1;}
+        }
+        
+        @keyframes fadeIn {
+          from {opacity: 0;}
+          to {opacity:1 ;}
+        }
+        </style>
+
+
+</html>

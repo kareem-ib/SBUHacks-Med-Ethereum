@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Access Key</title>
+</head>
+<h1>Paitent Access Code is: </h1>
+
+<FORM NAME="WordForm">  
+<INPUT TYPE=TEXT NAME="WordBox" id="wordbox" PickRandomWord();><BR>
+<INPUT TYPE=BUTTON VALUE="Generate" onClick="PickRandomWord();" id="button">
+</FORM>
+<style>
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1.2em;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 40px 10px;
+    line-height: 1.65em;
+    background: #B20940;
+    color: #fff;
+    font-weight: 300;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 20% 0 5% 0;
+  }
+  
+  #wordbox {
+      /*opacity: 0;*/
+      margin: 30px auto 0;
+      display: block;
+      width: 1000px;
+      height: 40px;
+      font-size: 20px;
+      text-align: center;
+      background: #fff;
+      border-radius: 6px;
+      color: #black;
+      transition: 1s linear;
+  }
+  
+  #button {
+    background: #0b7fba;
+      border: 0;
+      color: #fff;
+      font-size: 20px;
+      padding: 1em 2em;
+      cursor: pointer;
+      margin: 0 auto 60px;
+      display: block;
+      text-align: center;
+      border-radius: 6px;
+      font-weight: bold;
+  }
+  </style>
+<script>
+  var NumberOfWords = 30
+
+var words = new BuildArray(NumberOfWords)
+
+// Use the following variables to 
+// define your random words:
+words[0] = "offer"
+words[1] = "paitent"
+words[2] = "application"
+words[3] = "service"
+words[4] = "this"
+words[5] = "at"
+words[6] = "grandchild"
+words[7] = "glasses"
+words[8] = "form"
+words[9] = "depression"
+words[10] = "perfect"
+words[11] = "jelly"
+words[12] = "fruit"
+words[13] = "cows"
+words[14] = "milk"
+words[15] = "ball"
+words[16] = "middle"
+words[17] = "outside"
+words[18] = "friend"
+words[19] = "sleep"
+words[20] = "dazzle"
+words[21] = "craft"
+words[22] = "league"
+words[23] = "of"
+words[24] = "legends"
+words[25] = "motor"
+words[26] = "crypto"
+words[27] = "torch"
+words[28] = "bankruptcy"
+words[29] = "catch"
+
+function BuildArray(size){
+this.length = size
+for (var i = 1; i <= size; i++){
+this[i] = null}
+return this
+}
+
+function PickRandomWord() {
+// Generate a random number between 1 and NumberOfWords
+var code = "";
+// Display the word inside the text box
+for(var i = 0; i < 12; i++){
+var rnd = Math.ceil(Math.random() * NumberOfWords)
+code += words[rnd] + " ";
+}
+document.getElementById("wordbox").value = code;
+}
+</Script>
+</html>
