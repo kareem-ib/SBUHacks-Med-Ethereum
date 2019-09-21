@@ -1,4 +1,5 @@
 pragma solidity ^0.5.8;
+pragma experimental ABIEncoderV2;
 import "./Info.sol";
 
 contract PatientInfo {
@@ -7,7 +8,7 @@ contract PatientInfo {
     mapping (bytes32 => Info.patient_info) private hashed_info;
     event _PatientInfoCreated(address owner);
 
-    constructor(bytes32 _key, 
+    constructor(string memory _key, 
 		bytes32 _date_of_visit, 
 		bytes32 _doctor_name, 
 		bytes32 _organization,
@@ -15,7 +16,7 @@ contract PatientInfo {
 	        bytes32 _diagnosis,
 	        bytes32 _additional_info) public {
 
-	bytes32 key = keccak256(_key);
+	bytes32 key = keccak256(abi.encodePacked(_key));
 	owner = msg.sender;
 
 	Info.patient_info memory info;
@@ -30,7 +31,7 @@ contract PatientInfo {
 	emit _PatientInfoCreated(owner);
     }
 
-    function getInfo(bytes32 _key) public returns(Info.patient_info memory info) {
-	return hashed_info[keccak256(_key)];
+    function getInfo(string memory _key) public returns(Info.patient_info memory info) {
+	return hashed_info[keccak256(abi.encodePacked(_key))];
     }
 }
