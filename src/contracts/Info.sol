@@ -1,7 +1,7 @@
 pragma solidity ^0.5.8;
 library Info{
 
-    struct Info {
+    struct patient_info {
         bytes32 date_of_visit;
         bytes32 doctor_name;
         bytes32 organization;

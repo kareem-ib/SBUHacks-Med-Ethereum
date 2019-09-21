@@ -4,7 +4,7 @@ import "./Info.sol";
 contract PatientInfo {
     address public owner;
 
-    mapping (bytes32 => Info.Info) private hashed_info;
+    mapping (bytes32 => Info.patient_info) private hashed_info;
     event _PatientInfoCreated(address owner);
 
     constructor(bytes32 _key, 
@@ -18,7 +18,7 @@ contract PatientInfo {
 	bytes32 memory key = keccak256(_key);
 	owner = msg.sender;
 
-	Info.Info memory info;
+	Info.patient_info memory info;
 	info.date_of_visit = _date_of_visit;
 	info.doctor_name = _doctor_name;
 	info.organization = _organization;
@@ -30,7 +30,7 @@ contract PatientInfo {
 	emit _PatientInfoCreated(owner);
     }
 
-    function getInfo(bytes32 _key) public returns(Info.Info memory info) {
+    function getInfo(bytes32 _key) public returns(Info.patient_info memory info) {
 	return hashed_info[keccak256(_key)];
     }
 }
